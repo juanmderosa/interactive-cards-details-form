@@ -273,10 +273,12 @@ color: var(--Darkgrayishviolet);;
 }
 
 .attribution { 
+    width: 100%;
     font-size: 11px; 
     text-align: center; 
+    height: 10px;
     position: relative;
-    bottom: -40px;
+    bottom: 5%;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
