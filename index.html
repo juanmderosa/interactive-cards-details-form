@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <main class="mainContainer">
+    <section class="cardsImgContainer">
+      <div class="cardBack">
+        <p class="cardBackCvc">000</p>
+      </div>
+      <div class="cardFront">
+        <div class="cardLogoContainer">
+          <img class="cardFontLogo" src="./images/card-logo.svg" alt="">
+        </div>
+        <div class="cardinfoContainer">
+          <p class="cardNumber">0000 0000 0000 0000</p>
+          <div class="cardNameExp">
+            <p class="cardName">Jane Appleseed</p>
+            <p class="cardExp"><span class="cardExpMM">00</span>/<span class="cardExpYY">00</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cardDataContainer">
+      <form class="form">
+        <div class="inputCardHolderContainer">
+          <label class="formLabel" for="cardHolder">Cardholder Name</label>
+          <input class="input" type="text" id="cardHolder" placeholder="e.g. Jane Appleseed">
+        </div>
+        <div class="inputCardNumberContainer">
+          <label class="formLabel" for="cardNumber">Card Number</label>
+          <input class="input" type="text" id="inputCardNumber" placeholder="e.g. 1234 5678 9123 0000">
+          <p class="errorText errorTextCardNumber">Wrong format, numbers only</p>
+        </div>
+        <div class="expCvcContainer">
+          <div class="expDateContainer">
+            <label class="formLabel" for="expDate">Exp. Date</label>
+            <input class="input inputMMYY inputMM" type="text" id="expDate" placeholder="MM">
+            <p class="errorText errorTextMM">Can´t be blank</p>
+          </div>
+          <div class="expDateContainer">
+            <label class="formLabel" for="expDate">(MM/YY)</label>
+            <input class="input inputMMYY inputYY" type="text" id="expDate" placeholder="YY">
+            <p class="errorText errorTextYY">Can´t be blank</p>
+          </div>
+          <div class="cvcContainer">
+            <label class="formLabel" for="CVC">CVC</label>
+            <input class="input inputCVC" type="text" id="CVC" placeholder="e.g. 123">
+            <p class="errorText errorTextCVC">Can´t be blank</p>
+          </div>
+        </div>
+        </div>
+          <input class="btn" type="submit" value="Confirm" id="inputBtn">
+      </form>
+      <div class="thankYouSection">
+        <img class="iconComplete" src="./images/icon-complete.svg" alt="">
+        <h1 class="thankYouTitle">Thank you!</h1>
+        <p class="thankYouDescription">We've added your card details</p>
+        <button class="btn">Continue</button>
+      </div>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/juanmderosa" target="_blank">Juan Martín De Rosa</a>.
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
+
